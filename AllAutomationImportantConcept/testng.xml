@@ -9,6 +9,7 @@
   <test thread-count="5" name="Test">
    
     <classes>
+    <class name="com.extentReport.ExtentreportScreenshot"></class>
       <class name="com.Listners.TakeFailureOnluScreeShots">
       		<methods>
       			<include name="TestCaseFailureScreenShots1"></include>
