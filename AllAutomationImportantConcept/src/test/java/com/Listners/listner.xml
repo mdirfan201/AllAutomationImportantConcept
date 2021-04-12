@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Listners">
+
+<listeners>
+	<listener class-name="com.Listners.CustomListeners"></listener>
+</listeners>
+
+  <test name="ListnerLoginTesExample">
+    <classes>
+      <class name="com.Listners.TakeFailureOnluScreeShots">
+      		<methods>
+      		<exclude name="TestCaseFailureScreenShots1"></exclude>
+      			<include name="TestCaseFailureScreenShots2"></include>
+      			<include name="TestCaseFailureScreenShots3"></include>
+      			<exclude name="TestCaseFailureScreenShots4"></exclude>
+      			
+      			</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

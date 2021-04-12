@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <listeners>
+	<listener class-name="com.Listners.CustomListeners"></listener>
+</listeners>
+
+  <test thread-count="5" name="Test">
+   
+    <classes>
+      <class name="com.Listners.TakeFailureOnluScreeShots">
+      		<methods>
+      			<include name="TestCaseFailureScreenShots1"></include>
+      			<include name="TestCaseFailureScreenShots2"></include>
+      			<include name="TestCaseFailureScreenShots3"></include>
+      			<include name="TestCaseFailureScreenShots4"></include>
+      			</methods>
+      			</class>
+      		
+      <class name="ActionsClassConcepet.MouseMovement"/>
+      <class name="com.HandleWindowAndTabs.HandleWindow"/>
+      <class name="com.HandleFrames.handleIFrame"/>
+      <class name="ActionsClassConcepet.MouseDragDrop"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
